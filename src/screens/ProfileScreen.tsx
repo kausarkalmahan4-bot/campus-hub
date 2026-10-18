@@ -3,7 +3,8 @@ import { Alert, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 're
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { TabScreenProps, cardShadow, colors, radius } from '../types/navigation';
+import { TabScreenProps } from '../types/navigation';
+import { cardShadow, colors, radius } from '../styles/theme';
 
 export function ProfileScreen({ navigation }: TabScreenProps<'Profile'>) {
   const insets = useSafeAreaInsets();

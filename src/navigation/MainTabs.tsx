@@ -5,7 +5,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen';
 import { ServicesScreen } from '../screens/ServicesScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
-import { IconName, MainTabParamList, colors } from '../types/navigation';
+import { MainTabParamList } from '../types/navigation';
+import { colors } from '../styles/theme';
+
+type IconName = React.ComponentProps<typeof Ionicons>['name'];
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 

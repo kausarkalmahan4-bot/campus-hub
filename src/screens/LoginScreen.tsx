@@ -12,7 +12,8 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
-import { RootScreenProps, colors, radius } from '../types/navigation';
+import { RootScreenProps } from '../types/navigation';
+import { colors, radius } from '../styles/theme';
 
 export function LoginScreen({ navigation }: RootScreenProps<'Login'>) {
   const [login, setLogin] = useState('');

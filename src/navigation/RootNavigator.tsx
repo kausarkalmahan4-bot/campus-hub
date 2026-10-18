@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LoginScreen } from '../screens/LoginScreen';
 import { DetailsScreen } from '../screens/DetailsScreen';
 import { MainTabs } from './MainTabs';
-import { RootStackParamList, colors } from '../types/navigation';
-
+import { RootStackParamList } from '../types/navigation';
+import { colors } from '../styles/theme';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export function RootNavigator() {

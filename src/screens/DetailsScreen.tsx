@@ -1,7 +1,9 @@
 import React from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { RootScreenProps, cardShadow, colors, findService, radius } from '../types/navigation';
+import { RootScreenProps } from '../types/navigation';
+import { findService } from '../data/services';
+import { cardShadow, colors, radius } from '../styles/theme';
 
 export function DetailsScreen({ route, navigation }: RootScreenProps<'Details'>) {
   const { serviceId, title } = route.params;
